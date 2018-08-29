@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}HOME{% endblock %}
+
+{% block body %}
+    <h1 class="text-center mb-5">내 프로젝트</h1> <!-- m은 마진! 위 여백은 mt(top), 아래는 mb 그리고 뒤에 -숫자. ml, mr도 있다. -->
+    <a href="/christmas" class="btn btn-danger active" role="button" aria-pressed="true">크리스마스일까?</a>
+    <a href="/lunch" class="btn btn-success active" role="button" aria-pressed="true">점심메뉴 고르기</a>
+    <a href="/godtest" class="btn btn-info active" role="button" aria-pressed="true">신이 나를 만들때...</a>
+    <a href="/google" class="btn btn-dark active" role="button" aria-pressed="true">구글</a>
+    <a href="/opgg" class="btn btn-light active" role="button" aria-pressed="true">op.gg검색</a>
+    <a href="/htmlguide" class="btn btn-warning active" role="button" aria-pressed="true">html가이드</a>
+    
+
+
+{% endblock %}

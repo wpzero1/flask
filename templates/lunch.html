@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}점심메뉴 추천{% endblock %}
+
+{% block body %}
+    {% if lunch == '김밥카페' %}
+         <h1>오늘 굶자.....</h1>
+    {% else %}
+         <h1>{{lunch}} 먹으러 가!!!!</h1>
+    {% endif %}
+   
+    <hr/> <!-- 닫는태그가 없는 태그라서 뒤에 /를 붙였는데, hr만 써도 동작한다 -->
+    
+        {% for menu in box %} <!-- for문 돌리기. 파이썬과 동일 -->
+        <p class="font-weight-bold mb-2">{{menu}}</p> <!-- 메뉴들이 p태그에 하나씩 담김 -->
+        {% endfor %}
+
+{% endblock %}

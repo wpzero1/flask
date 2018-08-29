@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}신이 나를 만들때...{% endblock %}
+
+{% block body %}
+         <h1>신이 나를 만들 때... {{godtest}} 들을 담아내셨습니다.</h1>
+   
+    <hr/>
+    
+        {% for item in result %} <!-- for문 돌리기. 파이썬과 동일 -->
+        <p>{{item}}</p> <!-- 메뉴들이 p태그에 하나씩 담김 -->
+        {% endfor %}
+
+{% endblock %}
